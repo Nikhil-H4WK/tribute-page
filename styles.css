@@ -118,7 +118,7 @@ a:hover {
     }
 
     .main {
-        width: fit-content;
+        width: auto;
     }
 
     #footer {
