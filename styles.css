@@ -1,99 +1,131 @@
+/* 0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop */
+
+
+
+
+
+
 * {
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
 body {
     font-family: "PTSans-Regular",  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    background-color: #1A1A1A;
+    background-color: rgb(32, 30, 30);
     color: white;
 }
 
 .main {
     text-align: center;
+    /* width: 100%; */
 }
 
 .title {
-    padding: 25px;
-    font-size: 55px;
+    padding: 10px;
+    font-size: 7vw;
 }
 
 #phrase {
-    padding-bottom: 27px;
-    font-size: 22px;
+    padding: 20px;
 }
 
-.ssr-image {
-    width: 46vw;
-    display: flex;
-    justify-content: center;
+.tribute-info .info {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.tribute-info .info-title {
+    padding: 20px;
+}
+
+.tribute-info .info-title h2 {
+    font-size: 17px;
+}
+
+.ssr-image-wrap {
     background-color: white;
-    margin: 20px auto;
-    border-radius: 30px;
-}
-
-.ssr-image img {
-    padding: 22px
-}
-
-.info-title {
-    padding: 30px;
-    font-size: 23px;
-}
-
-.info {
+    width: 75vw;
     text-align: center;
-    width: 80%;
-    margin: 0px auto 0px auto;
+    border-radius: 5%;
+    margin: 0 auto;
 }
 
-.info li {
-    margin: 25px 0px;
+.ssr-image-wrap #ssr-img {
+    width: 65vw;
+    padding: 15px;
+}
+
+ul li {
+    padding: 15px;
+    font-size: 14px;
     text-align: left;
 }
 
 a {
-    color: white;
-}
-
-#qoute {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-#name {
-    text-align: right;
-    font-style: italic;
-    font-weight: 400;
-}
-
-#footer {
-    font-size: 30px;
-    font-weight: 600;
-    margin: 50px;
+    color: rgb(255, 255, 255);
 }
 
 a:hover {
     color: teal;
 }
 
+#name {
+    position: relative;
+    text-align: right;
+}
+
+#qoute {
+    font-size: 15px;
+}
+
+#wiki {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 13px;
+}
+
 footer {
     text-align: center;
+    padding: 15px;
+    font-size: 15px;
 }
 
-/* For mobile users */
-@media screen and (max-width: 426px) {
-    body {
-        width: 31rem;
-    }
-
-    .ssr-image {
-        width: 25rem;
+@media screen and (min-width: 800px) {
+    .title {
+        font-size: 50px;
     }
     
-    .ssr-image img {
-        width: 23rem;
-        height: 19rem;
+    .tribute-info .info-title h2 {
+        font-size: 28px;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
+
+    #wiki {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 19px;
     }
 }
+
+@media screen and (min-width: 1300px){
+    .ssr-image-wrap {
+        width: 50vw;
+    }
+
+    .ssr-image-wrap #ssr-img {
+        width: 40vw;
+    }
+    
+}
+
