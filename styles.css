@@ -82,34 +82,18 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 1200px){
-    .ssr-image {
-        width: 67vw;
+/* For mobile users */
+@media screen and (max-width: 426px) {
+    body {
+        width: 31rem;
     }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px){
     .ssr-image {
-        width: 70vw;
-    }
-    .ssr-image img {
-        width: 60vw;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 767px){
-    body{
-        width: 40rem;
+        width: 25rem;
     }
     
-    .ssr-image {
-        width: 62vw;
-    }
-
     .ssr-image img {
-        height: auto;
-        width: 51vw;
+        width: 23rem;
+        height: 19rem;
     }
-    
 }
