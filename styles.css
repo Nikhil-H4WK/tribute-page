@@ -4,96 +4,31 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "PTSans-Regular",  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    background-color: #1A1A1A;
+body{
+    background-color: rgb(31, 29, 29);
     color: white;
 }
 
-.main {
-    text-align: center;
+.title{
+    font-size:7vw;
 }
 
-.title {
-    padding: 25px;
-    font-size: 55px;
+.ssr-img{
+    width: 100%;
+    height: auto;
 }
 
-#phrase {
-    padding-bottom: 27px;
-    font-size: 22px;
-}
 
-.ssr-image {
-    width: 46vw;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    margin: 20px auto;
-    border-radius: 30px;
-}
-
-.ssr-image img {
-    padding: 22px
-}
-
-.info-title {
-    padding: 30px;
-    font-size: 23px;
-}
-
-.info {
-    text-align: center;
-    width: 80%;
-    margin: 0px auto 0px auto;
-}
-
-.info li {
-    margin: 25px 0px;
-    text-align: left;
-}
-
-a {
-    color: white;
-}
-
-#qoute {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-#name {
-    text-align: right;
-    font-style: italic;
-    font-weight: 400;
-}
-
-#footer {
-    font-size: 30px;
-    font-weight: 600;
-    margin: 50px;
-}
-
-a:hover {
-    color: teal;
-}
-
-footer {
-    text-align: center;
-}
-
-/* For mobile users */
-@media screen and (max-width: 426px) {
-    body {
-        width: 31rem;
+@media screen and (min-width: 600px) {
+    .ssr-img{
+        width: 80%;
+        height: auto;
     }
+    .ssr-img-wrap{
+        text-align: center;
+    }
+}
 
-    .ssr-image {
-        width: 25rem;
-    }
-    
-    .ssr-image img {
-        width: 23rem;
-        height: 19rem;
-    }
+@media screen and (min-width: 900px) {
+    /* HUE HUE HUE */
 }
